@@ -6,3 +6,12 @@ export const Netflix_background =
 
 export const Logout_Logo =
   "https://www.freeiconspng.com/thumbs/sign-out-icon/sign-out-logout-icon-0.png";
+
+export const API_Options = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YTE1ODNkM2E2OTE1ZThmZjYwNDkzMGY4ZWExMDMxYSIsIm5iZiI6MTcyMzk1ODI2OC44Niwic3ViIjoiNjZjMTgzZmM5Nzg1MGVmZDkwNDRkZTc3Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.w7Gi8O4wHlkA4vw6ApNCaW7Ye_86p9imno4SJVoUctw",
+  },
+};

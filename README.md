@@ -13,3 +13,6 @@
 - Created Redux Store
 - Navigation
 - Sign Out
+- Unsubscribe
+- TMDB setup
+- Movie store redux

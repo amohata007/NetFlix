@@ -8,7 +8,6 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
@@ -18,7 +17,6 @@ const Login = () => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const nameRef = useRef(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const toggleSignInForm = () => {
@@ -70,10 +68,8 @@ const Login = () => {
               // An error occurred
               // ...
             });
-          console.log(user);
         })
         .catch((error) => {
-          const errorCode = error.code;
           const errorMessage = error.message;
           setErrMessage(errorMessage);
         });
@@ -86,10 +82,8 @@ const Login = () => {
       )
         .then((userCredential) => {
           // Signed in
-          const user = userCredential.user;
         })
         .catch((error) => {
-          const errorCode = error.code;
           const errorMessage = error.message;
           setErrMessage(errorMessage);
         });
@@ -100,11 +94,15 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={Netflix_background} alt="background"></img>
+        <img
+          className=" h-screen w-screen object-cover"
+          src={Netflix_background}
+          alt="background"
+        ></img>
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-3/12 absolute bg-black p-12 my-24 mx-auto right-0 left-0 text-white shadow-lg bg-opacity-75 rounded-lg"
+        className="w-3/12 absolute bg-black p-12 my-32 mx-auto right-0 left-0 text-white shadow-lg bg-opacity-75 rounded-lg"
       >
         <h1 className="font-bold text-2xl p-2">
           {isSignIn ? "Sign In" : "Sign Up"}
