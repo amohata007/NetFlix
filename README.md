@@ -8,3 +8,8 @@
 - Routing
 - Form Validation
 - UseRef Hook
+- Firebase Setup
+- Sign In/SIgn Up Auth
+- Created Redux Store
+- Navigation
+- Sign Out
