@@ -16,3 +16,7 @@
 - Unsubscribe
 - TMDB setup
 - Movie store redux
+- Video Background
+- Main Container
+- Secondary Container
+- Traile Data
