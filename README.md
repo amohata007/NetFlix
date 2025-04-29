@@ -19,4 +19,4 @@
 - Video Background
 - Main Container
 - Secondary Container
-- Traile Data
+- Trailer Data
