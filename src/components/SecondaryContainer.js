@@ -14,7 +14,6 @@ const SecondaryContainer = () => {
     );
     const json = await data.json();
     dispatch(addPopularMovies(json?.results));
-    console.log(json?.results, "Check");
   };
 
   useEffect(() => {
@@ -30,7 +29,6 @@ const SecondaryContainer = () => {
 
         <MovieList heading={"Upcoming Movies"} movies={movies?.popularMovies} />
       </div>
-      {/* <MovieList heading={"Popular Movies"} /> */}
     </div>
   );
 };
